@@ -1,0 +1,67 @@
+// 1. Define Mixins with font styles in rem
+
+@mixin font-style($size, $line-height, $weight) {
+  color: #000000;
+  text-align: left;
+  font-family: "Pretendard", sans-serif;
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+
+// 2. Create Specific Mixins for each style
+@mixin font-28-bold {
+  @include font-style(2.8rem, 4.2rem, 700);
+}
+
+@mixin font-24-bold {
+  @include font-style(2.4rem, 3.6rem, 700);
+}
+
+@mixin font-24-regular {
+  @include font-style(2.4rem, 3.6rem, 400);
+}
+
+@mixin font-20-bold {
+  @include font-style(2rem, 3rem, 700);
+}
+
+@mixin font-20-regular {
+  @include font-style(2rem, 3rem, 400);
+}
+
+@mixin font-18-bold {
+  @include font-style(1.8rem, 2.8rem, 700);
+}
+
+@mixin font-18-regular {
+  @include font-style(1.8rem, 2.8rem, 400);
+}
+
+@mixin font-16-bold {
+  @include font-style(1.6rem, 2.6rem, 700);
+}
+
+@mixin font-16-regular {
+  @include font-style(1.6rem, 2.6rem, 400);
+}
+
+@mixin font-15-regular {
+  @include font-style(1.5rem, 2.2rem, 400);
+}
+
+@mixin font-15-bold {
+  @include font-style(1.5rem, 2.2rem, 700);
+}
+
+@mixin font-14-regular {
+  @include font-style(1.4rem, 2rem, 400);
+}
+
+@mixin font-14-bold {
+  @include font-style(1.4rem, 2rem, 700);
+}
+
+@mixin font-12-regular {
+  @include font-style(1.2rem, 1.8rem, 400);
+}

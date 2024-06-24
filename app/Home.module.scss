@@ -1,0 +1,6 @@
+@import 'styles/global-styles/index.scss';
+
+
+.test{
+  @include font-28-bold;
+}
